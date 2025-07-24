@@ -9,7 +9,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/applauncher"],
+  "modules-right": ["custom/weather"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -26,5 +26,13 @@
     "format": "{:%H:%M}",
     "tooltip-format": "{:%A, %d %B %Y}",
     "interval": 60
+  },
+
+  "custom/weather": {
+      "format": "{}",
+      "exec": "~/.config/waybar/scripts/weather.sh",
+      "interval": 60,
+      "tooltip": false
   }
 }
+
