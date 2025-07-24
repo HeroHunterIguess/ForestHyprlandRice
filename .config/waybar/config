@@ -1,0 +1,30 @@
+{
+  "layer": "bot",
+  "spacing": 0,
+  "height": 0,
+  "margin-bottom": 0,
+  "margin-top": 8,
+  "margin-left": 7,
+  "margin-right": 7,
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/applauncher"],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "hyprctl dispatch workspace {name}"
+  },
+
+  "custom/applauncher": {
+    "format": "o",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+    "tooltip": true
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 60
+  }
+}
