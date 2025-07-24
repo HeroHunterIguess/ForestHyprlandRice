@@ -1,0 +1,74 @@
+window {
+    background-color: rgba(25, 30, 28, 0.85); /* misty dark green */
+    border: 2px solid rgba(60, 70, 65, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Fira Sans", "Noto Sans", sans-serif;
+    font-size: 16px;
+    color: #e8f1ea; /* light foggy white */
+}
+
+/* Input box */
+#input {
+background-color: rgba(35, 40, 38, 0.9);
+color: #e5f5ec;
+border: 1px solid rgba(80, 90, 85, 0.4);
+border-radius: 6px;
+padding: 6px 8px;
+}
+
+/* List entries */
+#entry {
+padding: 6px 12px;
+margin: 3px 0;
+border-radius: 5px;
+background-color: rgba(40, 50, 47, 0.3);
+color: #d3e0da;
+}
+
+/* Selected entry */
+#entry:selected {
+background-color: rgba(110, 150, 120, 0.5); /* soft forest green */
+color: #ffffff;
+}
+
+/* Scroll container */
+#scroll {
+margin-top: 5px;
+}
+
+/* Text alignment */
+#text {
+padding-left: 6px;
+}
+
+/* Hide scrollbar completely */
+scrollbar,
+scrollbar * {
+    all: unset;
+    background: none;
+    border: none;
+    box-shadow: none;
+    opacity: 0;
+}
+
+/* Kill green dot tickmarks if GTK injects them */
+undershoot,
+.fine-ticks,
+tickmarks,
+tick,
+tickmark {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* Prevent outlines on focus */
+window:focus,
+#entry:focus,
+#input:focus {
+outline: none;
+box-shadow: none;
+}
