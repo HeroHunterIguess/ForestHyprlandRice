@@ -63,3 +63,14 @@ font-weight: 500;
 outline: none;
 box-shadow: none;
 }
+
+#custom-weather {
+    padding: 0.4em 0.8em;
+    color: #dff3d9;
+    background-color: rgba(20, 40, 20, 0.45);
+    border-radius: 5px;
+}
+
+#custom-weather:hover {
+    background-color: rgba(20, 40, 20, 0.65);
+}
