@@ -1,0 +1,65 @@
+#waybar {
+border-radius: 0;
+padding: 4px 8px;
+margin: 4px;
+color: #ebf5eb; /* very light green/near white */
+background-color: transparent;
+font-family: "Fira Sans", "Noto Sans", sans-serif;
+font-size: 12px;
+}
+
+/* Workspaces container */
+#workspaces {
+color: #dff3d9; /* very pale green */
+border-radius: 4px;
+padding: 3px 8px;
+background-color: rgba(20, 40, 20, 0.45); /* more transparent dark green */
+transition: color 120ms ease;
+}
+
+/* Workspace buttons */
+#workspaces button {
+color: #dff3d9;
+background-color: transparent;
+border: none;
+padding: 4px 8px;
+border-radius: 3px;
+transition: background-color 120ms ease, color 120ms ease;
+}
+
+/* Hover effect for workspace buttons */
+#workspaces button:hover {
+background-color: rgba(40, 80, 30, 0.6); /* slightly less opaque hover */
+color: #ffffff; /* pure white on hover */
+}
+
+/* Custom Applauncher */
+#custom-applauncher {
+border-radius: 4px;
+padding: 4px 8px;
+background-color: rgba(20, 40, 20, 0.45); /* match workspaces */
+color: #dff3d9;
+transition: background-color 120ms ease, color 120ms ease;
+}
+
+#custom-applauncher:hover {
+background-color: rgba(40, 80, 30, 0.6);
+color: #ffffff;
+}
+
+/* Clock */
+#clock {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+/* Remove outlines and shadows on focus */
+#workspaces button:focus,
+#custom-applauncher:focus,
+#clock:focus {
+outline: none;
+box-shadow: none;
+}
