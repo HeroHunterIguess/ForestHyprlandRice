@@ -1,7 +1,7 @@
 #waybar {
 border-radius: 0;
 padding: 4px 8px;
-margin: 4px;
+margin: 10;
 color: #ebf5eb; /* very light green/near white */
 background-color: transparent;
 font-family: "Fira Sans", "Noto Sans", sans-serif;
@@ -71,6 +71,44 @@ box-shadow: none;
     border-radius: 5px;
 }
 
-#custom-weather:hover {
-    background-color: rgba(20, 40, 20, 0.65);
+#cpu {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
 }
+
+#custom-gpu {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+#memory {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+
+#network {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+#custom-RW {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
