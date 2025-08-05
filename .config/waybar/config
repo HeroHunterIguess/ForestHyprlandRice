@@ -1,15 +1,15 @@
 {
   "layer": "bot",
-  "spacing": 0,
+  "spacing": 4,
   "height": 0,
   "margin-bottom": 0,
   "margin-top": 8,
   "margin-left": 7,
   "margin-right": 7,
   "position": "top",
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "network", "custom/RW"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/weather"],
+  "modules-right": ["custom/weather", "cpu", "custom/gpu", "memory"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -33,6 +33,32 @@
       "exec": "~/.config/waybar/scripts/weather.sh",
       "interval": 60,
       "tooltip": false
-  }
-}
+  },
 
+  "cpu": {
+    "format": "CPU: {usage}%"
+  },
+
+  "custom/gpu": {
+    "exec": "cat /sys/class/hwmon/hwmon7/device/gpu_busy_percent",
+    "format": "GPU: {}%",
+    "return-type": "",
+    "interval": 1
+  },
+
+  "memory": {
+    "format": "RAM: {}%"
+  },
+
+  "network": {
+    "format": "{ifname}",
+    "format-disconnected": "⚠ Disconnected",
+    "format-wifi": "ᯤ {signalStrength}%"
+  },
+
+  "custom/RW": {
+    "format": "⚠RW⚠",
+    "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh"
+  }
+
+}
