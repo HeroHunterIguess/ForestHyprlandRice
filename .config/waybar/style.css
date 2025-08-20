@@ -1,7 +1,7 @@
 #waybar {
 border-radius: 0;
 padding: 4px 8px;
-margin: 10;
+margin: 0;
 color: #ebf5eb; /* very light green/near white */
 background-color: transparent;
 font-family: "Fira Sans", "Noto Sans", sans-serif;
@@ -29,7 +29,7 @@ transition: background-color 120ms ease, color 120ms ease;
 
 /* Hover effect for workspace buttons */
 #workspaces button:hover {
-background-color: rgba(40, 80, 30, 0.6); /* slightly less opaque hover */
+background-color: rgba(20, 40, 20, 0.45);
 color: #ffffff; /* pure white on hover */
 }
 
@@ -112,3 +112,23 @@ color: #dff3d9;
 font-weight: 500;
 }
 
+#custom-LOCKIN {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+#custom-lockout {
+padding: 4px 8px;
+border-radius: 4px;
+background-color: rgba(20, 40, 20, 0.45);
+color: #dff3d9;
+font-weight: 500;
+}
+
+
+* { 
+min-height: 0;
+}
