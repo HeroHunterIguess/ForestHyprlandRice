@@ -1,0 +1,5 @@
+The driver script is litearlly just for me on this pc
+
+the other scripts are good for the lock in mode i created, which force closes several applications
+
+this scripts folder i acutally store somewhere else not in this folder this is just where it is in the github repo lmao
