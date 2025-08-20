@@ -1,13 +1,13 @@
 {
   "layer": "bot",
   "spacing": 4,
-  "height": 0,
+  "height": 20,
   "margin-bottom": 0,
   "margin-top": 8,
   "margin-left": 7,
   "margin-right": 7,
   "position": "top",
-  "modules-left": ["hyprland/workspaces", "network", "custom/RW"],
+  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN", "custom/lockout"],
   "modules-center": ["clock"],
   "modules-right": ["custom/weather", "cpu", "custom/gpu", "memory"],
 
@@ -23,7 +23,7 @@
   },
 
   "clock": {
-    "format": "{:%H:%M}",
+    "format": "{:%I:%M %p}",
     "tooltip-format": "{:%A, %d %B %Y}",
     "interval": 60
   },
@@ -59,6 +59,16 @@
   "custom/RW": {
     "format": "⚠RW⚠",
     "on-click": "sudo /home/herohunter/Everything/scripts/driverscript.sh"
+  },
+
+  "custom/LOCKIN": {
+    "format": "LOCK IN",
+    "on-click": "/home/herohunter/Everything/scripts/lockinscript.sh"
+  },
+
+  "custom/lockout": {
+    "format": "X",
+    "on-click": "/home/herohunter/Everything/scripts/lockout.sh"
   }
 
 }
