@@ -7,9 +7,9 @@
   "margin-left": 7,
   "margin-right": 7,
   "position": "top",
-  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN", "custom/lockout"],
+  "modules-left": ["hyprland/workspaces", "network", "custom/RW", "custom/LOCKIN"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/weather", "cpu", "custom/gpu", "memory"],
+  "modules-right": ["custom/weather", "pulseaudio", "cpu", "custom/gpu", "memory"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -63,12 +63,11 @@
 
   "custom/LOCKIN": {
     "format": "LOCK IN",
-    "on-click": "/home/herohunter/Everything/scripts/lockinscript.sh"
+    "on-click": "bash -c '/home/herohunter/Everything/scripts/togglelockin.sh'"
   },
 
-  "custom/lockout": {
-    "format": "X",
-    "on-click": "/home/herohunter/Everything/scripts/lockout.sh"
+  "pulseaudio": {
+    "format": "🕪 {volume}% ",
+    "format-muted": "MUTED"
   }
-
 }
