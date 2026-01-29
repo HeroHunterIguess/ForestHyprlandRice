@@ -1,145 +1,129 @@
+/* overall waybar styling */
+.module {
+    margin: 0 0px;
+    padding: 0px 0px;
+}
 #waybar {
-border-radius: 0;
-padding: 4px 8px;
-margin: 0;
-color: #ebf5eb; /* very light green/near white */
-background-color: transparent;
-font-family: "Fira Sans", "Noto Sans", sans-serif;
-font-size: 12px;
+    border: 2px solid #7b899d;
+    color: #273549;
+    background-color: #15191f;
+    font-family: "monospace";
+    font-size: 13px;
+
+    padding: 0px 5px;
 }
 
-/* Workspaces container */
+
+
+/* STYLING ALL INDIVIDUAL ELEMENTS */
+
+
+
+/* styling workspace switcher */
 #workspaces {
-color: #dff3d9; /* very pale green */
-border-radius: 4px;
-padding: 3px 8px;
-background-color: rgba(20, 40, 20, 0.45); /* more transparent dark green */
-transition: color 120ms ease;
-}
+    color: #dedfe5;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    transition: color 120ms ease;
 
-/* Workspace buttons */
+    padding: 0px 0px;
+}
 #workspaces button {
-color: #dff3d9;
-background-color: transparent;
-border: none;
-padding: 4px 8px;
-border-radius: 3px;
-transition: background-color 120ms ease, color 120ms ease;
+    color: #dedfe5;
+    background-color: #1d2839;
+    border: none;
+    transition: background-color 120ms ease, color 120ms ease;
+    border-radius: 0px;
 }
-
-/* Hover effect for workspace buttons */
 #workspaces button:hover {
-background-color: rgba(20, 40, 20, 0.45);
-color: #ffffff; /* pure white on hover */
+    background-color: #7b899d;
+    color: #ffffff;
+    border-radius: 0px;
 }
 
-/* Custom Applauncher */
-#custom-applauncher {
-border-radius: 4px;
-padding: 4px 8px;
-background-color: rgba(20, 40, 20, 0.45); /* match workspaces */
-color: #dff3d9;
-transition: background-color 120ms ease, color 120ms ease;
-}
 
-#custom-applauncher:hover {
-background-color: rgba(40, 80, 30, 0.6);
-color: #ffffff;
-}
-
-/* Clock */
+/* style clock in the middle */
 #clock {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
+    padding: 0px 5px;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
 }
 
-/* Remove outlines and shadows on focus */
-#workspaces button:focus,
-#custom-applauncher:focus,
-#clock:focus {
-outline: none;
-box-shadow: none;
-}
 
+/* weather display style */
 #custom-weather {
-    padding: 0.4em 0.8em;
-    color: #dff3d9;
-    background-color: rgba(20, 40, 20, 0.45);
-    border-radius: 5px;
+    border: 2px solid #7b899d;
+    color: #dedfe5;
+    background-color: #1d2839;
+
+    padding: 0px 5px;
 }
 
+
+/* style cpu, gpu, and ram % displays */
 #cpu {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
-}
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
 
+    padding: 0px 5px;
+}
 #custom-gpu {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
 }
 
 #memory {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
 }
 
 
+/* network and wifi related stuff */
 #network {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
-}
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
 
+    padding: 0px 5px;
+}
 #custom-RW {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
-}
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
 
+    padding: 0px 5px;
+}
 #custom-LOCKIN {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
+    border: 2px solid #7b899d;
+    background-color: #1d2839;
+    color: #dedfe5;
+    font-weight: 500;
+
+    padding: 0px 5px;
 }
 
-#custom-lockout {
-padding: 4px 8px;
-border-radius: 4px;
-background-color: rgba(20, 40, 20, 0.45);
-color: #dff3d9;
-font-weight: 500;
-}
 
+/* style volume display */
 #pulseaudio {
-padding: 4px 8px;
-padding-top: 4;
-padding-bottom: 0;
-color: #dff3d9;
-background-color: rgba(20, 40, 20, 0.45);
-border-radius: 5px;
-}
+    border: 2px solid #7b899d;
+    padding-top: 4px;
+    padding-bottom: 0;
+    color: #dedfe5;
+    background-color: #1d2839;
 
-
-
-
-* { 
-min-height: 0;
+    padding-left: 5px
 }
